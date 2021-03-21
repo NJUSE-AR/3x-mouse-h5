@@ -2,7 +2,11 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link :to="{name:'Color'}">Color</router-link> |
+      <router-link :to="{name:'Interact'}">Interact</router-link> |
+      <router-link :to="{name:'Scan'}">Scan</router-link> |
+      <router-link :to="{name:'Wash'}">Wash</router-link> |
+      <router-link :to="{name:'Share'}">Share</router-link> |
     </div>
     <router-view/>
   </div>
@@ -16,4 +20,5 @@
   text-align center
   color #2c3e50
   margin-top 60px
+
 </style>
